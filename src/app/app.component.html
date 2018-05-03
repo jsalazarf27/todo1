@@ -1,5 +1,12 @@
 <div>
     <app-my-component></app-my-component>
-    <button (click)="count = count + 1">Click me</button>
-    <h1>{{count}}</h1>
+    <div>
+        <button (click)="count = count + 1">Click me</button>
+        <h1>{{count}}</h1>
+    </div>
+    <div>
+        <img [src]="imgSource">
+        <input [disabled]="isEnable">
+        <button (click)="isEnable = isEnable ? false: true">{{isEnable ? 'Enable' : 'Disable'}}</button>
+    </div>
 </div>
